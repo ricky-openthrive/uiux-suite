@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@import "@repo/ui/tailwind.theme.css";
+/* Tell Tailwind to scan the UI package source files */
+@source "../../../packages/ui/src/**/*.{ts,tsx}";

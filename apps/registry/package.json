@@ -1,0 +1,22 @@
+{
+  "name": "cxful-registry",
+  "type": "module",
+  "scripts": {
+    "build:json": "tsx src/scripts/build.ts",
+    "build:server": "tsx src/scripts/build.ts",
+    "dev": "pnpm run build:server && wrangler dev src/index.ts",
+    "deploy": "pnpm run build:server && wrangler deploy src/index.ts",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@repo/ui": "workspace:*",
+    "hono": "^4.12.12"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@cloudflare/workers-types": "^4.20260409.1",
+    "@types/node": "^22.19.17",
+    "tsx": "^4.21.0",
+    "wrangler": "^4.4.0"
+  }
+}
