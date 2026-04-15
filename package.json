@@ -16,5 +16,11 @@
   "packageManager": "pnpm@10.33.0",
   "engines": {
     "node": ">=18"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "19.2.14",
+      "csstype": "3.2.3"
+    }
   }
 }
