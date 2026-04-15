@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vp dev",
-    "build": "tsc -b && vp build",
+    "dev": "vite dev",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vp preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
